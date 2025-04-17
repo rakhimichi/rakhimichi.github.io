@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spider-Man Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spider-Man | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Spider-Man Website!</h1>
-        <nav>
-            <ul>
-                <li><a href="#history">History</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="history">
-            <h2>Spider-Man's History</h2>
-            <p>Here we will tell the history of Spider-Man...</p>
-        </section>
+  <header class="header">
+    <div class="container">
+      <h1>Spider-Man Universe</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="media.html">Media</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section id="media">
-            <h2>Media</h2>
-            <p>Here will be images and videos related to Spider-Man...</p>
-        </section>
+  <main class="container">
+    <section class="hero-split">
+      <div class="hero-left">
+        <img src="pictures/spiderman-main.jpg" alt="Spider-Man holding a camera">
+      </div>
+      <div class="hero-right">
+        <p class="tagline">“With great power comes great responsibility.”</p>
+        <h2>Welcome to the Spider-Verse</h2>
+        <p class="intro-text">
+          Explore the story, characters, and media of one of Marvel’s most iconic superheroes — Spider-Man.
+        </p>
+        <div class="nav-buttons">
+          <a href="history.html" class="button">Read History</a>
+          <a href="media.html" class="button">Explore Media</a>
+        </div>
+        <p class="easter-egg">Spider-Man always finds his way 🕷️</p>
+      </div>
+    </section>
+  </main>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Contact info will be here...</p>
-        </section>
-    </main>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Spider-Man Website by Kirill Rakhimov</p>
+      <p class="footer-note">
+        Introduction page of my web-site for the course Introduction to Digital Services – DIG0011TIAE
+      </p>
+    </div>
+  </footer>
 
-    <footer>
-        <p>&copy; 2025 Spider-Man Website</p>
-    </footer>
 </body>
 </html>

@@ -1,0 +1,186 @@
+/* === Base === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  /* === Container === */
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* === Header === */
+  .header {
+    background: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #c70039;
+    font-weight: bold;
+  }
+  
+  .nav a.active {
+    text-decoration: underline;
+  }
+  
+  /* === Main Section === */
+  main.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* === Hero Split === */
+  .hero-split {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+  
+  .hero-left {
+    flex: 1 1 300px;
+    text-align: center;
+  }
+  
+  .hero-left img {
+    width: 100%;
+    max-width: 400px;
+    animation: dropIn 1.2s ease-out;
+  }
+  
+  @keyframes dropIn {
+    0% {
+      transform: translateY(-120%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .hero-right {
+    flex: 1 1 300px;
+    text-align: center;
+  }
+  
+  .hero-right h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-right .intro-text {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .tagline {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+  
+  .button {
+    padding: 12px 24px;
+    background: #c70039;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .button:hover {
+    background: #a1002e;
+  }
+  
+  .easter-egg {
+    margin-top: 15px;
+    font-size: 0.75rem;
+    color: #aaa;
+  }
+  
+  .footer {
+    background: #f0f0f0;
+    text-align: center;
+    padding: 1px 0 6px;
+    font-size: 0.9rem;
+    margin-top: auto;
+    line-height: 1.25;
+  }
+  
+  .footer-note {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 3px;
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .hero-split {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero-right h2 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-left img {
+      max-width: 300px;
+    }
+  }
+
+  
