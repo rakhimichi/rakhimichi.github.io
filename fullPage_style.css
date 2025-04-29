@@ -239,4 +239,36 @@ main .container {
   font-size: 0.9rem;
   color: #888;
 }
-  
+
+/* === Tables (History Page) === */
+.spiderman-tables {
+  margin-top: 40px;
+}
+
+.spiderman-tables h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.spidey-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.spidey-table th,
+.spidey-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.spidey-table th {
+  background-color: #f8f8f8;
+  color: #222;
+  font-weight: bold;
+}
