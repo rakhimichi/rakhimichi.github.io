@@ -11,6 +11,10 @@ html, body {
   flex-direction: column;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #fff;
@@ -43,12 +47,16 @@ body {
   display: flex;
   gap: 20px;
   padding-left: 0;
+  justify-content: center;
 }
 
 .nav a {
   text-decoration: none;
   color: #c70039;
   font-weight: bold;
+  display: inline-block;
+  min-width: 80px;
+  text-align: center;
 }
 
 .nav a.active {
@@ -124,6 +132,7 @@ main .container {
   margin-top: 15px;
 }
 
+/* === Buttons === */
 .button {
   padding: 12px 24px;
   background: #c70039;
@@ -132,9 +141,15 @@ main .container {
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
 }
 
 .button:hover {
+  background: #a1002e;
+}
+
+.button:active {
   background: #a1002e;
 }
 
@@ -218,6 +233,7 @@ main .container {
   }
 }
 
+/* === Quote Section (Home Page) === */
 .spiderman-quote {
   margin-top: 60px;
   padding: 30px 20px;
@@ -271,13 +287,4 @@ main .container {
   background-color: #f8f8f8;
   color: #222;
   font-weight: bold;
-}
-
-html {
-  overflow-y: scroll;
-}
-/* === iOS Fix: Tap highlight and callout === */
-.button {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  user-select: none;
 }
