@@ -279,5 +279,5 @@ html {
 /* === iOS Fix: Tap highlight and callout === */
 .button {
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
+  user-select: none;
 }
