@@ -1,4 +1,3 @@
-/* === Base === */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +17,6 @@ body {
   line-height: 1.6;
 }
 
-/* === Container === */
 .container {
   width: 90%;
   max-width: 1000px;
@@ -26,7 +24,6 @@ body {
   padding: 20px;
 }
 
-/* === Header === */
 .header {
   background: #f8f8f8;
   border-bottom: 1px solid #ddd;
@@ -55,12 +52,10 @@ body {
   text-decoration: underline;
 }
 
-/* === Main Section === */
 main .container {
   padding-bottom: 40px;
 }
 
-/* === Hero Split === */
 .hero-split {
   flex-grow: 1;
   display: flex;
@@ -144,7 +139,6 @@ main .container {
   color: #aaa;
 }
 
-/* === Footer === */
 .footer {
   background: #f0f0f0;
   text-align: center;
@@ -160,7 +154,6 @@ main .container {
   margin-top: 3px;
 }
 
-/* === Responsive: Mobile First === */
 @media (max-width: 768px) {
   .hero-split {
     flex-direction: column;
@@ -240,7 +233,6 @@ main .container {
   color: #888;
 }
 
-/* === Tables (History Page) === */
 .spiderman-tables {
   margin-top: 40px;
 }
@@ -276,8 +268,71 @@ main .container {
 html {
   overflow-y: scroll;
 }
-/* === iOS Fix: Tap highlight and callout === */
+
 .button {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   user-select: none;
+}
+
+.media-gallery {
+  margin-top: 40px;
+}
+
+.media-gallery h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid figure {
+  margin: 0;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.hero-logo-fix {
+  max-width: 260px;
+  height: auto;
+  align-self: flex-start;
+  margin-top: -30px;
+  margin-bottom: 0;
+}
+
+.image-preview {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  max-width: 300px;
+  border: 4px solid #c70039;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  z-index: 999;
+  display: none;
+  background: #fff;
+  padding: 4px;
+}
+
+.image-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
 }

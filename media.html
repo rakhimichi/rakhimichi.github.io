@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Spider-Man | Media</title>
   <link rel="stylesheet" href="fullPage_style.css" />
+  <style>
+    body.media-page .hero-left img {
+      animation: none;
+    }
+  </style>
 </head>
-<body>
+<body class="media-page">
 
   <header class="header">
     <div class="container">
@@ -24,10 +29,47 @@
   <main class="container">
     <section class="hero-split">
       <div class="hero-left">
+        <img src="pictures/spiderman-media.jpg" alt="Spider-Man Logo" class="hero-logo-fix">
       </div>
       <div class="hero-right">
-        <h2>Coming Soon</h2>
-        <p class="intro-text">This section will feature Spider-Man artwork, trailers, and game appearances.</p>
+        <p class="tagline">“Spidey swings into media.”</p>
+        <h2>Media Gallery</h2>
+        <p class="intro-text">
+          Enjoy Spider-Man themed images, fan art, and content inspired by comics, movies, and games.
+        </p>
+        <p class="intro-text">
+          From vibrant reinterpretations by fans to official artwork from decades of storytelling, this gallery celebrates the legacy and creativity surrounding the Spider-Verse.
+        </p>
+        <div class="nav-buttons">
+          <a href="history.html" class="button">See History</a>
+          <a href="index.html" class="button">Back to Home</a>
+        </div>
+        <p class="easter-egg">Spidey never leaves fans without content 🖼️</p>
+      </div>
+    </section>
+
+    <!-- Preview box (appears on hover) -->
+    <div id="image-preview" class="image-preview"></div>
+
+    <section class="media-gallery">
+      <h2>Spider-Man Visual Gallery</h2>
+      <div class="gallery-grid">
+        <figure><img src="pictures/spiderman-media-gallery1.jpg" alt="Spider-Man on rooftop reading letter"></figure>
+        <figure><img src="pictures/spiderman-media-gallery2.jpg" alt="Venom and Spider-Man comic cover"></figure>
+        <figure><img src="pictures/spiderman-media-gallery3.jpg" alt="Upside-down Spider-Man pose between buildings"></figure>
+        <figure><img src="pictures/spiderman-media-gallery4.jpg" alt="Peter Parker lying in bed in costume"></figure>
+        <figure><img src="pictures/spiderman-media-gallery5.jpg" alt="Classic comic cover with Chameleon"></figure>
+        <figure><img src="pictures/spiderman-media-gallery6.jpg" alt="Green Goblin fighting Spider-Man"></figure>
+        <figure><img src="pictures/spiderman-media-gallery7.jpg" alt="Miles and Peter eating together, multiverse"></figure>
+        <figure><img src="pictures/spiderman-media-gallery8.jpg" alt="Mysterio close-up with cape and smoke"></figure>
+        <figure><img src="pictures/spiderman-media-gallery9.jpg" alt="No Way Home fan poster with Doctor Octopus"></figure>
+        <figure><img src="pictures/spiderman-media-gallery10.jpg" alt="Spider-Man parody of Blond album cover"></figure>
+        <figure><img src="pictures/spiderman-media-gallery11.jpg" alt="Notebook sketches of Spider-Man and NYC"></figure>
+        <figure><img src="pictures/spiderman-media-gallery12.jpg" alt="Spider-Man classic comic face in web"></figure>
+        <figure><img src="pictures/spiderman-media-gallery13.jpg" alt="Spider-Man drinking coffee on roof ledge"></figure>
+        <figure><img src="pictures/spiderman-media-gallery14.jpg" alt="Miles Morales swinging between skyscrapers"></figure>
+        <figure><img src="pictures/spiderman-media-gallery15.jpg" alt="Spider-Man arcade-style comic panel"></figure>
+        <figure><img src="pictures/spiderman-media-gallery16.jpg" alt="Spider-Man crawling with torn costume on ground"></figure>
       </div>
     </section>
   </main>
@@ -41,5 +83,6 @@
     </div>
   </footer>
 
+  <script src="media_preview.js"></script>
 </body>
 </html>
