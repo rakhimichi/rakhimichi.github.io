@@ -1,4 +1,4 @@
-if (window.innerWidth > 768) {
+if (window.innerWidth > 1024) {
     let previewBox = document.getElementById("image-preview");
     let galleryImages = document.querySelectorAll(".gallery-grid img");
   
